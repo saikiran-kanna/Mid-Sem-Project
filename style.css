@@ -1,0 +1,261 @@
+body{
+    background-color: #ecfafa;
+    font-family: "League Spartan", sans-serif;
+}
+header{
+    background-image: url(https://d3dyfaf3iutrxo.cloudfront.net/general/upload/7caa466cbd3c4975b9e39ec6700b1656.svg);
+    background-color: #5ba4a4;
+    width: 100%;
+    height: 155px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p, h1, ul, li{
+    margin: 0;
+    padding: 0;
+}
+.card > img{
+    width: 13vh;
+    height: 13vh;
+}
+.card{
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px #5ba4a4;
+}
+#special{
+    box-shadow: 0px 2px 10px #5ba4a4, -5px 0px #5ba4a4;
+}
+.card-company{
+    display: flex;
+}
+#new{
+    margin-left: 15px;
+}
+#featured{
+    margin-left: 15px;
+}
+.card-timeUL{
+    display: flex;
+    justify-content: space-between;
+}
+.card-tags {
+    margin-left: auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card h1{
+    cursor: pointer;
+}
+.card h1:hover{
+    color: #5ba4a4;
+}
+.card-text{
+    padding-left: 25px;
+}
+.card-timeUL :first-child{
+    list-style: none;
+}
+h1{
+    margin: 12px 0px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+#company-name {
+    color: #5ba4a4;
+    font-weight: bold;
+    padding-top: 7px;
+}
+#new{
+    width: 50px;
+    height: 17px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #5ba4a4;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 40px;
+}
+#featured{
+    width: 80px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 40px;
+}
+.card-timeUL li {
+    color: grey;
+    text-align: center;
+    font-weight: 400;
+}
+.tag {
+    border: none;
+    font-weight: 600;
+    background-color: #eef6f6;
+    color: #5ba4a4;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-family: "League Spartan", sans-serif;
+    font-size: medium;
+}
+.tag:hover{
+    background-color: #5ba4a4;
+    color: white;
+}
+.innerDiv {
+    display: flex;
+    justify-content: center;
+    margin-left: 18px;
+}
+.innerDiv .X{
+    font-size: 17px;
+    padding: 8px;
+    border: none;
+    color: white;
+    background-color: #5ba4a4;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+#searchBar{
+    width: 77.8%;
+    height: 5vh;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 25px 0px;
+    position: absolute;
+    left: 10.89%;
+    top: 13.5%;
+    box-shadow: 0px 2px 10px #5ba4a4;
+    visibility: hidden;
+}
+#clearBtn{
+    margin-left: auto;
+    margin-right: 25px;
+    font-size: 19px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: grey;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;
+}
+#clearBtn:hover{
+    color: #5ba4a4;
+    text-decoration: underline;
+}
+.X:hover{
+    background-color: black;
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        font-size: 0.8rem;
+    }
+    .card > img{
+        width: 7.5vh;
+        height: 7.5vh;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    #searchBar{
+        top: 8%;
+        left: 12.6%;
+        height: 30px;
+        width: 75%;
+    }
+    .card-tags{
+        margin: 0;
+        padding: 0;
+    }
+    .tag{
+        font-size: 0.8rem;
+    }
+    #new{
+        width: 35px;
+        height: 13px;
+        font-size: 0.67rem;
+        padding: 0;
+        padding-top: 5px;
+        margin-left: 4px;
+        margin-top: 3px;
+    }
+    #featured{
+        width: 60px;
+        font-size: 0.67rem;
+        padding-top: 7px;
+        padding-bottom: 5px;
+        margin-left: 3px;
+    }
+    .card-text{
+        padding-left: 15px;
+    }
+    
+    
+}
+@media screen and (max-width: 600px){
+    body{
+        font-size: 0.8rem;
+    }
+    .card img{
+        width: 8.7vh;
+        height: 8.7vh;
+    }
+    .card{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .card-tags{
+        margin-top: 30px;
+    }
+    .card-text{
+        padding-left: 10px;
+    }
+    h1{
+        margin: 8px 0px;
+        font-size: 1rem;
+    }
+    .tag{
+        font-size: 0.7rem;
+        height: 10px;
+        padding: 0;
+        padding-top: 6px;
+        padding-bottom: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #new{
+        margin-top:3px;
+        margin-bottom: 0px;
+    }
+    #featured{
+        height: 8px;
+        padding: 0;
+        padding: 5px 3px;
+        margin-top: 2.5px;
+        margin-left: 4px;
+    }
+    #searchBar{
+        top: 14%;
+        height: 10px;
+    }
+}
